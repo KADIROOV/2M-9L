@@ -1,335 +1,334 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-
-    background-image: url(../images/bacg.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-
+  background-image: url(./img/bacg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0px auto;
-
-
+  width: 80%;
+  margin: 0 auto;
 }
 
 .header {
-    background-color: #0A2640;
-    padding-top: 56px;
+  background-color: #0a2640;
+  padding-top: 56px;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 64px;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
 }
 
 .header-info {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-info span {
-    transition: all 0.5s;
-    cursor: pointer;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  padding: 8px 10px;
+  display: inline-block;
+  border-radius: 24px;
 }
 
 .header-info span:hover {
-    padding: 8px 40px;
-    background-color: #FFFFFF;
-    border-radius: 24px;
-    color: #0A2640;
+  padding: 8px 40px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  color: #0a2640;
+  transform: scale(1.04);
 }
 
 .header-info a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: opensans;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 28px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
 }
 
 .hero {
-    display: flex;
-    align-items: center;
-    gap: 139px;
-    margin-bottom: 56px;
-
+  display: flex;
+  align-items: center;
+  gap: 139px;
+  margin-bottom: 56px;
 }
 
 .section {
-    background-color: #0A2640;
+  background-color: #0a2640;
 }
 
 .hero-title h1 {
-    font-family: manrope;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 72px;
-    color: #FFFFFF;
-    width: 567px;
-    margin-bottom: 16px;
-
-
+  font-family: "Manrope";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  color: #ffffff;
+  width: 567px;
+  margin-bottom: 16px;
 }
 
 .hero-title p {
-    font-family: opensans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    margin-bottom: 40px;
-    color: #F1F1F1;
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 40px;
+  color: #f1f1f1;
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 24px;
-
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .buttons button {
-    font-weight: 700;
-    line-height: 28px;
-    font-size: 20px;
-    font-family: opensans;
-    padding: 16px 56px;
-    background-color: transparent;
-    border-radius: 56px;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: all 0.5s;
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 20px;
+  font-family: "Open sans";
+  padding: 16px 56px;
+  background-color: transparent;
+  border-radius: 56px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 .buttons button:hover {
-    background-color: #69E6A6;
-    color: #0A2640;
+  background-color: #69e6a6;
+  color: #0a2640;
+  transform: scale(1.03);
 }
 
 .hero-img {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 13px;
-    width: 500px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+  width: 500px;
 }
 
 .img-left {
-    padding: 13px;
-    border-radius: 13px;
-    width: 192x;
-    height: 165px;
-    background-image: url(../images/hero-img-left.png);
-    background-size: cover;
-
+  padding: 13px;
+  border-radius: 13px;
+  background-image: url(./img/hero-img-left.png);
+  background-size: cover;
 }
 
 .img-left-1 {
-    background-image: url(../images/hero-left-top.svg);
-    background-repeat: no-repeat;
-    background-position: left top;
+  background-image: url(./img/hero-left-top.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .logo-container img {
-    background-image: url(../images/Logos.png);
-    background-repeat: no-repeat;
-
+  background-image: url(./img/Logos.png);
+  background-repeat: no-repeat;
 }
 
 .servises-our {
-    text-align: center;
-    margin-top: 82px;
-    font-family: opensans;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #777777;
-
+  text-align: center;
+  margin-top: 82px;
+  font-family: "open sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #777777;
 }
 
 .servises-desc {
-    text-align: center;
-    font-family: manrope;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 72px;
-    color: #000000;
-    margin-bottom: 78px;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  color: #000000;
+  margin-bottom: 78px;
 }
 
 .card {
-    width: 300px;
-
+  width: 300px;
 }
 
 .card h5 {
-    margin-top: 24px;
-    font-family: opensans;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    margin-bottom: 12px;
-
+  margin-top: 24px;
+  font-family: "open sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 12px;
 }
 
 .card p {
-    font-family: opensans;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 36px;
-    text-align: left;
-    color: #777777;
-    width: 293px;
-
+  font-family: "open sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  color: #777777;
+  width: 293px;
 }
 
 .card a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-family: opensans;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 36px;
-    color: #0A2640;
-    border-bottom: 1px solid#0A2640;
-    padding: 8px;
-    width: 164px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "open sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #0a2640;
+  border-bottom: 1px solid #0a2640;
+  width: 164px;
+  transition: all 0.3s ease;
+}
 
+.card a:hover {
+  padding-bottom: 8px;
 }
 
 .block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .customers {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 150px;
-    margin-top: 185px;
-    position: relative;
-
+  display: flex;
+  gap: 150px;
+  margin-top: 185px;
+  position: relative;
 }
 
 .img2 {
-    position: absolute;
-    left: 180px;
-    bottom: 350px;
+  position: absolute;
+  left: 180px;
+  top: 222px;
 }
 
 .custom-title h2 {
-    font-family: manrope;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 56px;
-    text-align: left;
-    color: #000000;
-    margin-bottom: 13px;
-
+  font-family: "Manrope";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 13px;
 }
 
 .custom-title span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-color: #0A2640;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #0a2640;
 }
 
 .span-title {
-    display: flex;
-    align-items: center;
-    gap: 27px;
-    margin-top: 27px;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  margin-top: 27px;
 }
 
 .span-title p {
-
-    font-family: opensans;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #000000;
-
-
+  font-family: "open sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000000;
 }
 
 .custom-title button {
-    width: 210px;
-    padding: 16px 56px;
-    margin-top: 56px;
-    border-radius: 56px;
-    border: none;
-    background-color: #0A2640;
+  width: 210px;
+  padding: 16px 56px;
+  margin-top: 56px;
+  border-radius: 56px;
+  border: none;
+  background-color: #0a2640;
 
-    font-family: opensans;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    transition: all 0.5s;
-
+  font-family: "open sans";
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  transition: all 0.5s;
 }
 
 .custom-title button:hover {
-    background-color: #65E4A3;
-    color: #0A2640;
+  background-color: #65e4a3;
+  color: #0a2640;
 }
 
 .content-wrapper {
-    margin-top: 120px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 150px;
-    position: relative;
-
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 150px;
+  position: relative;
 }
 
 .content-bacg {
-    position: absolute;
-    right: 105px;
-    bottom: -150px;
+  position: absolute;
+  right: 105px;
+  bottom: -150px;
 }
 
 .content-title {
-    width: 500px;
+  width: 500px;
 }
 
 .content-title h2 {
-    font-family: manrope;
-    color: #000000;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 56px;
-    margin-bottom: 64px;
-
-
+  font-family: "Manrope";
+  color: #000000;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
+  margin-top: 90px;
+  margin-bottom: 64px;
 }
 
-.content-title button {
+.content-title .btn-1 {
+  font-family: "Open sans";
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 500px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 32px 0px #00000014;
+  margin-bottom: 24px;
+  padding: 16px 55px;
+  background-color: #0a2640;
+  transition: all 0.3s ease;
+}
+
+.content-title .btn {
+    font-family: "Open sans";
+    color: #0a2640;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -338,260 +337,268 @@ body {
     box-shadow: 0px 4px 32px 0px #00000014;
     margin-bottom: 24px;
     padding: 16px 55px;
-    background-color: #0A2640;
+    background-color: #65e4a3;
+    transition: all 0.3s ease;
+  }
+
+.content-title .btn-1:hover {
+  background-color: #65e4a3;
+  color: #0a2640;
 }
 
-.content-title button:hover {
-    background-color: #65E4A3;
-}
+.content-title .btn:hover {
+    background-color: #ffff;
+  }
 
 .main-commet {
-    background-color: #0A2640;
-    margin-top: 220px;
+  background-color: #0a2640;
+  margin-top: 220px;
 }
 
 .commets-title {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .commets-title h2 {
-    font-family: manrope;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 72px;
-    color: #FFFFFF;
-    margin-top: 96px;
-
+  font-family: "Manrope";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  color: #ffffff;
+  margin-top: 96px;
 }
 
 .commet-span {
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background-color: #FFFFFF;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #ffffff;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
 
+.commet-span:hover{
+    background-color: #65e4a3;
+    transform: scale(1.04);
 }
 
 .commets-but {
-    display: flex;
-    align-items: center;
-    
-    gap: 26px;
-    margin-top: 179px;
+  display: flex;
+  align-items: center;
+
+  gap: 26px;
+  margin-top: 179px;
 }
 
 .commets {
-    margin-top: 56px;
-    display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-    gap: 22px;
+  margin-top: 56px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
 }
 
 .commet-card {
-    width: 350px;
-    box-shadow: 0px 12px 32px 0px #0000001F;
-    background-color: #FFFFFF;
-    padding: 40px;
-    border-radius: 12px;
-    margin-bottom: 96px;
+  width: 350px;
+  box-shadow: 3px 7px 6px 3px #ffff;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 96px;
+  transition: all 0.3s ease-in;
+  animation: move-card 2s infinite;
+}
+
+@keyframes move-card {
+    0%, 100% {
+        transform: translateY(-5px);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+}
+
+.commet-card:hover{
+    transform: translateY(-10px);
 }
 
 .commet-card p {
-    font-family: opensans;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-
+  font-family: "open sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
 }
 
 .commet-img {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
 }
 
 .commet-img p:first-child {
-    font-family: opensans;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 32px;
+  font-family: "open sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
 }
 
 .commet-img p:last-child {
-    font-family: opensans;
+  font-family: "open sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+    flex-wrap: wrap;
+  }
+
+  .hero p {
+    width: 567px;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .customers {
+    gap: 30px;
+  }
+  .content-wrapper {
+    position: relative;
+  }
+  .content-bacg {
+    position: absolute;
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 40%;
+  }
+
+  .block {
+    padding-right: 30px;
+    gap: 30px;
+  }
+
+  .card3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .header-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #ffffff;
+    width: 400px;
+    margin-bottom: 16px;
+  }
+
+  .hero p {
+    width: 350px;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons {
+    margin-bottom: 55px;
+  }
+
+  .buttons button {
+    width: 70%;
+  }
+
+  .header-info a {
     font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .hero-title h1 {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 52px;
+    color: #ffffff;
+    width: 80%;
+  }
+
+  .customers {
+    position: relative;
+  }
+
+  .img2 {
+    position: absolute;
+    left: -20px;
+    top: -150px;
+  }
+  .commets-title h2 {
+    font-size: 35px;
+
+    line-height: 50px;
+  }
+  .content-img {
+    display: none;
+  }
+  .customer-img {
+    display: none;
+  }
+  .content-title button {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .hero-img {
+    display: none;
+  }
+
+  .commets-title h2 {
+    font-size: 25px;
     font-weight: 400;
     line-height: 32px;
-    
-
-}
-
-@media screen and (max-width:1200px) {
-    .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .hero {
-        display: flex;
-        align-items: center;
-        gap: 39px;
-        flex-wrap: wrap;
-
-    }
-
-    .hero p {
-        width: 567px;
-    }
-
-    .logo-container {
-        display: none;
-    }
-
-    .customers {
-        gap: 30px;
-    }
-    .content-wrapper{
-        position: relative;
-    }
-    .content-bacg{
-        position: absolute;
-        left: 50px;
-    }
-
-}
-
-@media screen and (max-width:992px) {
-    .card {
-        width: 40%;
-    }
-
-    .block {
-        padding-right: 30px;
-        gap: 30px;
-    }
-
-    .card3 {
-        display: none;
-    }
-    
-}
-
-@media screen and (max-width:786px) {
-    .header-info {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 50px;
-        color: #FFFFFF;
-        width: 400px;
-        margin-bottom: 16px;
-    }
-
-    .hero p {
-        width: 350px;
-    }
-
-    body {
-        background-image: none;
-    }
-
-    .card {
-        width: 80%;
-    }
-
-    .block {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .buttons {
-        margin-bottom: 55px;
-    }
-
-    .buttons button {
-        width: 70%;
-    }
-
-    .header-info a {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 20px;
-    }
-
-    .hero-title h1 {
-
-        font-size: 35px;
-        font-weight: 400;
-        line-height: 52px;
-        color: #FFFFFF;
-        width: 80%px;
-
-
-
-    }
-
-    .customers {
-        position: relative;
-
-    }
-
-    .img2 {
-        position: absolute;
-        left: -20px;
-        top: -150px;
-    }
-    .commets-title h2 {
-        
-        font-size: 35px;
-        
-        line-height: 50px;
-        
-    }
-    .content-img{
-        display: none;
-    }
-    .customer-img{
-        display: none;
-    }
-    .content-title button{
-        width: 300px;
-    }
-
-}
-
-@media screen and (max-width:578px) {
-    .hero-img {
-        display: none;
-    }
-
-    .commets-title h2 {
-        
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 32px;
-       
-    
-    }
-    .hero-title h1{
-        width: 340px;
-    }
-    .logo img{
-        width: 150px;
-    }
+  }
+  .hero-title h1 {
+    width: 340px;
+  }
+  .logo img {
+    width: 150px;
+  }
 }
